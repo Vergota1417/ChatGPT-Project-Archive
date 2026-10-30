@@ -54,3 +54,15 @@ Use **Code → Download ZIP** from the repository to download all archived versi
 - Scripted clicks are untrusted browser events, and YouTube may ignore them.
 - Network CORS warnings from `ad.doubleclick.net` are unrelated to the userscript and will not necessarily disappear.
 - Skipping ads may affect YouTube's terms or behavior. Never treat DOM mock tests as proof of live efficacy.
+
+## October 30, 2026 — Experimental v4.0
+
+**[Download v4.0 userscript](YouTube_Smart_Skip_v4_0_Experimental.user.js)**. Separately, the tested local file is attached in the ChatGPT conversation.
+
+This revision independently implements techniques observed in actively maintained public-source projects (not a copy of their code): detect `ad-interrupting`/`ad-showing`, mute and accelerate an ad to 16×, try YouTube player `cancelPlayback()`, click visible Skip controls without repeat loops, hide selected static ad placements, and restore the previous playback settings after the ad. It does not fake a Premium subscription.
+
+**Verification:** JavaScript passed `node --check`; **10/10 isolated Chromium tests passed** using a mocked player. Tests cover ordinary videos, cancellation, rate/audio restoration, ad-showing, Skip visibility, avoidance of retry storms, paused ad handling, successful cancellation, and video replacement. **Live YouTube ad skipping was not tested.** It may fail when the platform changes.
+
+**For strongest actual ad blocking**, full uBlock Origin in Firefox can intercept network requests before ads load; Tampermonkey alone can only interact with the page/player after the fact. [Official uBlock Origin Firefox listing](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/). Chrome users can try the [official uBlock Origin Lite project](https://github.com/uBlockOrigin/uBOL-home), although MV3 restrictions limit its capabilities.
+
+Install **only one** ad-skip userscript at a time. In Tampermonkey, add the file using **Dashboard → Utilities → Import from File**, or open the GitHub link and install via **Raw**. Then refresh YouTube and open DevTools Console, running `window.__ytSmartSkip4.status()` to inspect attempts; it does not prove a skip was successful.

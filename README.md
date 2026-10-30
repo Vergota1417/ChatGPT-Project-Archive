@@ -1,22 +1,17 @@
 # ChatGPT Project Archive
 
-A persistent GitHub home for code and versions developed in ChatGPT.
+Permanent GitHub archive of scripts, code revisions, and related documentation.
 
-## Available projects
+## YouTube Smart Skip Watcher
 
-### [YouTube Smart Skip Watcher](YouTube-Smart-Skip/README.md)
+**[Start here: installation choices and October 2026 findings](YouTube-Smart-Skip/README.md)**
 
-- **[Original v2.0.0](YouTube-Smart-Skip/YouTube_Smart_Skip_Watcher_original_v2_0_0.user.js)** — preserved original script.
-- **[v2.0.2](YouTube-Smart-Skip/YouTube_Smart_Skip_Watcher_v2_0_2.user.js)** — experimental performance-limited patch. **Not confirmed to skip YouTube ads successfully.**
-- Other versions and troubleshooting notes are in the project folder.
+- **[Recommended maintained alternative](https://greasyfork.org/en/scripts/461341-youtube-mute-and-skip-ads)** — version 32 updated October 16, 2026, by the original maintainer.
+- **[Our experimental v3.0.0](YouTube-Smart-Skip/YouTube_Smart_Skip_2026_Experimental_v3.user.js)** — eight simulated Chromium tests passed; not tested on live YouTube advertisements.
+- [Original v2.0.0](YouTube-Smart-Skip/YouTube_Smart_Skip_Watcher_original_v2_0_0.user.js) and prior revisions are preserved.
 
-## Downloads
+**Download:** Code → Download ZIP, or open a .user.js file → Raw.
 
-Use **Code → Download ZIP** on this repository to download the entire archive, or open a specific `.user.js` file and select **Raw**.
+## Privacy
 
-GitHub downloads are not dependent on ChatGPT's temporary sandbox-file links.
-
-## Privacy notice
-
-**Check your repository visibility in Settings → General → Danger Zone → Change repository visibility.** This repository was public when these non-sensitive YouTube userscripts were uploaded. Do not put API keys, confidential work files, or personal records here unless the repository's access controls are appropriate.
-
+This GitHub repository was **public** when these scripts were archived. Check Settings → General → Danger Zone → Change repository visibility if you intend to store private code or records here. Never commit credentials, tokens, or other secrets.

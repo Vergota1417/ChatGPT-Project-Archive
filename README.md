@@ -4,6 +4,9 @@ Permanent GitHub archive of scripts, code revisions, and related documentation.
 
 ## YouTube Smart Skip Watcher
 
+**[Experimental v4 (2026)](YouTube-Smart-Skip/YouTube_Smart_Skip_v4_2026.user.js)** — 10/10 local simulated tests passed; live YouTube performance unverified. [Full test report](YouTube-Smart-Skip/TEST_REPORT_v4.md).
+
+
 **[Start here: installation choices and October 2026 findings](YouTube-Smart-Skip/README.md)**
 
 - **[Recommended maintained alternative](https://greasyfork.org/en/scripts/461341-youtube-mute-and-skip-ads)** — version 32 updated October 16, 2026, by the original maintainer.

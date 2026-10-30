@@ -1,5 +1,14 @@
 # YouTube Smart Skip Watcher
 
+## New: v4.0.0 experimental — October 30, 2026
+
+**[Installable userscript v4](YouTube_Smart_Skip_v4_2026.user.js)** · [10/10 local Chromium test report](TEST_REPORT_v4.md)
+
+Compared with our v3, v4 now attempts `#movie_player.cancelPlayback()` while ads are playing, immediately mutes/speeds the ad, clicks available Skip buttons only once per element, adds a guarded seek fallback, and supports basic Shorts advance. The script does **not** spoof Premium membership. **10/10 simulations passed; live YouTube efficacy is not verified and it is not proven better than the maintained Greasy Fork script.**
+
+**Recommended install:** Disable all old Skip watchers, click the v4 source → **Raw** → install through Tampermonkey (or paste the source into a new script). Use `window.__ytSmartSkipV4.state()` for diagnostics. Install only one ad-skip userscript at a time.
+
+
 ## Best current choices (verified October 30, 2026)
 
 ### 1. Maintained upstream alternative — first to try
